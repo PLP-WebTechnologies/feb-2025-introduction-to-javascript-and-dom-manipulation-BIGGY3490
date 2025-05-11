@@ -1,16 +1,21 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
+function changeText() {
+  document.getElementById("main-title").textContent = "JavaScript DOM Is Powerful!";
 }
 
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
+function toggleStyle() {
+  const desc = document.getElementById("description");
+  desc.classList.toggle("highlight");
 }
 
-#container {
-  margin-top: 20px;
+function addElement() {
+  const newItem = document.createElement("li");
+  newItem.textContent = "New Item";
+  document.getElementById("item-list").appendChild(newItem);
+}
+
+function removeElement() {
+  const list = document.getElementById("item-list");
+  if (list.lastElementChild) {
+    list.removeChild(list.lastElementChild);
+  }
 }
