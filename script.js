@@ -1,21 +1,36 @@
-function changeContent() {
-  const text = document.getElementById('intro-text');
-  text.textContent = '🎉 The text has been changed dynamically!';
-  text.style.color = 'blue';
-  text.style.fontWeight = 'bold';
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
-function addElement() {
-  const newPara = document.createElement('p');
-  newPara.id = 'new-paragraph';
-  newPara.textContent = '🆕 This paragraph was added with JavaScript!';
-  newPara.style.color = 'green';
-  document.getElementById('container').appendChild(newPara);
+#main-title {
+  color: #333;
 }
 
-function removeElement() {
-  const para = document.getElementById('new-paragraph');
-  if (para) {
-    para.remove();
-  }
+#description {
+  font-size: 1.1em;
+  margin-bottom: 10px;
 }
+
+.highlight {
+  color: crimson;
+  font-weight: bold;
+  background-color: #ffe0e0;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#item-list {
+  margin-top: 15px;
+}
+
+#item-list li {
+  margin: 5px 0;
+}
+
